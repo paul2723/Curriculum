@@ -7,7 +7,7 @@
     <meta name="description" content="Currículum vitae de [Tu Nombre]">
     <meta name="author" content="[Tu Nombre]">
     <title>Currículum Vitae de [Tu Nombre]</title>
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" width="15px" height="15px">
     <link rel="stylesheet" href="stylesheet/styles.css">
     
 </head>
@@ -30,7 +30,7 @@
     <main>
         <section id="perfil">
             <h2 class="subtitle">Perfil Profesional </h2>
-            <img id:"photo" src="https://i.pinimg.com/originals/20/35/97/203597f4783ef7ca7194a09de8605bcf.gif" alt="Foto de perfil">
+            <img id="photo" src="https://preview.redd.it/my-fair-share-of-pokemon-gifs-v0-viro7evsa4fd1.gif?width=543&auto=webp&s=ca3da19993bca117716d9f5ec1a0318e3bc034ce" alt="Foto de perfil">
             <p>Breve descripción sobre ti, tu enfoque profesional y objetivos.</p>
             <hr>
         </section>
@@ -122,7 +122,7 @@
             </article>
             <hr>
         </section>
-
+        <hr>
         <section id="contacto">
             <h2 class="subtitle">Contacto</h2>
 
@@ -134,32 +134,23 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                 referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
         </section>
+        <section>
         <form action="/enviar" method="post">
-            <!-- Campo de texto en una línea -->
-            <div>
-                <label for="nombre">Nombre completo</label>
-                <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-            </div>
+            <label for="nombre">Nombre completo</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
 
-            <!-- Lista desplegable -->
-            <div>
-                <label for="pais">Selecciona tu país</label>
-                <select id="pais" name="pais" required>
-                    <option value="">-- Selecciona tu país --</option>
-                    <option value="mx">México</option>
-                    <option value="ar">Argentina</option>
-                    <option value="es">España</option>
-                    <option value="co">Colombia</option>
-                </select>
-            </div>
+            <label for="pais">Selecciona tu país</label>
+            <select id="pais" name="pais" required>
+                <option value="">-- Selecciona tu país --</option>
+                <option value="mx">México</option>
+                <option value="ar">Argentina</option>
+                <option value="es">España</option>
+                <option value="co">Colombia</option>
+            </select>
 
-            <!-- Nueva sección: Dónde contactarte -->
-            <div>
-                <label for="contacto_form">¿Dónde podemos contactarte?</label>
-                <input type="email" id="contacto_form" name="contacto_form" placeholder="Tu correo electrónico" required>
-            </div>
+            <label for="contacto_form">¿Dónde podemos contactarte?</label>
+            <input type="email" id="contacto_form" name="contacto_form" placeholder="Tu correo electrónico" required>
 
-            <!-- Vector de valores (checkboxes) -->
             <fieldset>
                 <legend>Habilidades</legend>
                 <label>
@@ -176,17 +167,12 @@
                 </label>
             </fieldset>
 
-            <!-- Área de texto -->
-            <div>
-                <label for="descripcion">Descripción personal</label>
-                <textarea id="descripcion" name="descripcion" rows="5" cols="40" placeholder="Cuéntanos algo sobre ti" required></textarea>
-            </div>
+            <label for="descripcion">Descripción personal</label>
+            <textarea id="descripcion" name="descripcion" rows="5" cols="40" placeholder="Cuéntanos algo sobre ti" required></textarea>
 
-            <!-- Botón de envío -->
-            <div>
-                <button type="submit">Enviar</button>
-            </div>
+            <button type="submit">Enviar</button>
         </form>
+        </section>
         
     </main>
 
