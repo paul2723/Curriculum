@@ -4,35 +4,49 @@
 <head>
     <meta charset="UTF-8">
     <meta name="keywords" content="currículum, experiencia, educación, habilidades, contacto">
-    <meta name="description" content="Currículum vitae de [Tu Nombre]">
-    <meta name="author" content="[Tu Nombre]">
-    <title>Currículum Vitae de [Tu Nombre]</title>
+    <meta name="description" content="Currículum vitae de Paul Alcivar Zavala">
+    <meta name="author" content="Paul Alcivar Zavala">
+    <title>Currículum Vitae</title>
      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tangerine" width="15px" height="15px">
     <link rel="stylesheet" href="stylesheet/styles.css">
     
 </head>
 
 <body>
-    <header>
-        <h1>Bienvenido</h1>
-        <nav>
-            <ul>
-                <li><a href="#perfil">Perfil</a></li>
-                <li><a href="#experiencia">Experiencia</a></li>
-                <li><a href="#educacion">Educación</a></li>
-                <li><a href="#habilidades">Habilidades</a></li>
-                <li><a href="#referencias">Referencias</a></li>
-                <li><a href="#contacto">Contacto</a></li>
-            </ul>
-        </nav>
-    </header>
+     <header>
+        <section id="cabecera">
+            <h5 id="titulo">Curriculum Vitae</h5>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#perfil">Perfil</a></li>
+                    <li><a href="#experiencia">Experiencia</a></li>
+                    <li><a href="#educacion">Educación</a></li>
+                    <li><a href="#habilidades">Habilidades</a></li>
+                    <li><a href="#referencias">Referencias</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                </ul>
+            </nav>
+        </section>
+    </header> 
 
     <main>
+        <section id="bienvenida">
+            <div class="bienvenida-fondo">
+                <div class="frase-cuadro">
+                    <h5 id="frase">
+                        Profesional comprometido, con capacidad para trabajar en equipo, aprender rápidamente y adaptarse a nuevos desafíos, buscando aportar mis conocimientos y seguir desarrollándome en el ámbito laboral.
+                    </h5>
+                </div>
+            </div>
+        </section>
         <section id="perfil">
-            <h2 class="subtitle">Perfil Profesional </h2>
-            <img id="photo" src="https://preview.redd.it/my-fair-share-of-pokemon-gifs-v0-viro7evsa4fd1.gif?width=543&auto=webp&s=ca3da19993bca117716d9f5ec1a0318e3bc034ce" alt="Foto de perfil">
-            <p>Breve descripción sobre ti, tu enfoque profesional y objetivos.</p>
-            <hr>
+            <div class="perfil-flex">
+                <div class="perfil-texto">
+                    <h2 class="subtitle">¿Quién soy yo?</h2>
+                    <p>Breve descripción sobre ti, tu enfoque profesional y objetivos.</p>
+                </div>
+                <img id="photo" src="https://preview.redd.it/my-fair-share-of-pokemon-gifs-v0-viro7evsa4fd1.gif?width=543&auto=webp&s=ca3da19993bca117716d9f5ec1a0318e3bc034ce" alt="Foto de perfil">
+            </div>
         </section>
 
         <section id="experiencia">
@@ -60,7 +74,6 @@
                     <td>2018 - 2020</td>
                 </tr>
             </table>
-            <hr>
         </section>
 
         <section id="educacion">
@@ -76,59 +89,88 @@
         </section>
 
         <section id="habilidades">
-            <h2 class="subtitle">Habilidades</h2>
-            <p>Listado de tus habilidades técnicas y blandas.</p>
-            <ol>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>Trabajo en equipo</li>
-                <li>Comunicación efectiva</li>
-            </ol>
-            <hr>
+            <h2 class="subtitle" style="text-align: center;">Habilidades</h2>
+            <div class="slider-habilidades" style="justify-content: center;">
+                <div class="slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
+                    <span>HTML</span>
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" alt="CSS" />
+                    <span>CSS</span>
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript" />
+                    <span>JavaScript</span>
+                </div>
+                <div class="slide">
+                    <img src="https://cdn-icons-png.flaticon.com/512/3135/3135715.png" alt="Trabajo en equipo" />
+                    <span>Trabajo en equipo</span>
+                </div>
+                <div class="slide">
+                    <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Comunicación efectiva" />
+                    <span>Comunicación efectiva</span>
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java" />
+                    <span>Java</span>
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C++" />
+                    <span>C++</span>
+                </div>
+                <div class="slide">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python" />
+                    <span>Python</span>
+                </div>
+                <div class="slide">
+                    <img src="https://cdn-icons-png.flaticon.com/512/732/732220.png" alt="Excel" />
+                    <span>Excel</span>
+                </div>
+                <div class="slide">
+                    <img src="https://cdn-icons-png.flaticon.com/512/330/330439.png" alt="Inglés B1" />
+                    <span>Inglés B1</span>
+                </div>
+            </div>
         </section>
 
         <section id="referencias">
-            <h2 class="subtitle">Referencias</h2>
-            <article>
-                <blockquote>
-                    "Un profesional comprometido y siempre dispuesto a aportar soluciones innovadoras."
-                </blockquote>
-                <p>
-                    <strong>María López</strong><br>
-                    Gerente de Proyectos en Empresa A.<br>
-                    Trabajó conmigo durante dos años, destacando mi capacidad para liderar equipos y cumplir objetivos.
-                </p>
-            </article>
-            <article>
-                <blockquote>
-                    "Su habilidad para resolver problemas técnicos es excepcional y siempre mantiene una actitud positiva."
-                </blockquote>
-                <p>
-                    <strong>Carlos Ramírez</strong><br>
-                    Jefe de Tecnología en Empresa B.<br>
-                    Colaboramos en varios proyectos de análisis de datos y automatización de procesos.
-                </p>
-            </article>
-            <article>
-                <blockquote>
-                    "Demostró gran responsabilidad y dedicación en cada tarea asignada."
-                </blockquote>
-                <p>
-                    <span>Ana Torres</span><br>
-                    Supervisora de Soporte Técnico en Empresa C.<br>
-                    Fue parte fundamental del equipo de soporte, mostrando empatía y eficiencia con los clientes.
-                </p>
-            </article>
-            <hr>
+            <h2 class="subtitle" style="text-align:center;">Referencias</h2>
+            <div class="referencias-grid">
+                <!-- Ejemplo de una tarjeta de referencia -->
+                <div class="referencia-card">
+                    <h3>Juan Pérez</h3>
+                    <p>Gerente en Empresa X</p>
+                    <p>Email: juan.perez@email.com</p>
+                    <p>Tel: 555-1234</p>
+                    <div class="frase-ref">"Juan es un profesional dedicado y siempre dispuesto a ayudar."</div>
+                </div>
+                <div class="referencia-card">
+                    <h3>María Gómez</h3>
+                    <p>Supervisora en Compañía Y</p>
+                    <p>Email: maria.gomez@email.com</p>
+                    <p>Tel: 555-5678</p>
+                    <div class="frase-ref">"María destaca por su liderazgo y empatía con el equipo."</div>
+                </div>
+                <div class="referencia-card">
+                    <h3>Carlos Ruiz</h3>
+                    <p>Profesor en Universidad Z</p>
+                    <p>Email: carlos.ruiz@email.com</p>
+                    <p>Tel: 555-9012</p>
+                    <div class="frase-ref">"Carlos tiene una gran capacidad para enseñar y motivar."</div>
+                </div>
+                <div class="referencia-card">
+                    <h3>Ana Torres</h3>
+                    <p>Directora en Agencia W</p>
+                    <p>Email: ana.torres@email.com</p>
+                    <p>Tel: 555-3456</p>
+                    <div class="frase-ref">"Ana es innovadora y siempre aporta soluciones efectivas."</div>
+                </div>
+            </div>
         </section>
-        <hr>
         <section id="contacto">
-            <h2 class="subtitle">Contacto</h2>
-
             <p>Información para que te contacten: correo, teléfono, redes.</p>
             <p>Visita mi perfil profesional en <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> para más información.</p>
-            <hr>
             <iframe width="560" height="315" src="https://www.youtube.com/embed/qvn0MWP2KFY?si=FYyE3MpHa_Bty4si"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
