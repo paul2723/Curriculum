@@ -25,12 +25,16 @@ header {
     height: 100%;
     box-sizing: border-box;
 }
-#titulo {
-    font-size: 1.3rem;
+.titulo-cv {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; 
+    margin-left: 2rem; 
+}
+#titulo, #nombre {
+    margin: 0;
+    font-size: 2rem;
     font-weight: bold;
-    margin: 0.5rem 0;
-    text-align: center;
-    letter-spacing: 2px;
 }
 .subtitle {
     color: rgba(57, 63, 75, 0.89);
@@ -410,23 +414,4 @@ footer p {
     max-width: 320px;
     border-radius: 12px;
     box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-}
-.niveles-educacion {
-    display: flex;
-    gap: 2rem;
-    justify-content: center;
-    margin-bottom: 2rem;
-    flex-wrap: wrap;
-}
-.nivel-card {
-    background: #fff;
-    border-radius: 12px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.07);
-    padding: 1.5rem 1rem;
-    min-width: 220px;
-    max-width: 270px;
-    text-align: center;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
 }
