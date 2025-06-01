@@ -24,6 +24,7 @@
                     <li><a href="#habilidades">Habilidades</a></li>
                     <li><a href="#referencias">Referencias</a></li>
                     <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="#proyectos">Proyectos</a></li> <!-- Agregado -->
                 </ul>
             </nav>
         </section>
@@ -50,47 +51,78 @@
         </section>
 
         <section id="experiencia">
-            <h2 class="subtitle">Experiencia Laboral</h2>
-            <p>Listado de trabajos anteriores, roles y responsabilidades.</p>
-            <table>
+            <h2 class="subtitle center">Experiencia Laboral</h2>
+            <div class="tabla-experiencia-container center-content">
+        <table class="tabla-experiencia">
+            <thead>
                 <tr>
-                    <th></th>
                     <th>Puesto</th>
+                    <th>Empresa</th>
                     <th>Periodo</th>
+                    <th>Descripción</th>
                 </tr>
+            </thead>
+            <tbody>
                 <tr>
-                    <th>Empresa A</th>
                     <td>Desarrollador Web</td>
-                    <td>2022 - 2024</td>
+                    <td>Tech Solutions</td>
+                    <td>2022 - Actualidad</td>
+                    <td>Desarrollo y mantenimiento de sitios web responsivos y aplicaciones web.</td>
                 </tr>
                 <tr>
-                    <th>Empresa B</th>
                     <td>Analista de Datos</td>
+                    <td>DataCorp</td>
                     <td>2020 - 2022</td>
+                    <td>Análisis de grandes volúmenes de datos y generación de reportes para la toma de decisiones.</td>
                 </tr>
                 <tr>
-                    <th>Empresa C</th>
                     <td>Soporte Técnico</td>
+                    <td>InfoHelp</td>
                     <td>2018 - 2020</td>
+                    <td>Atención a usuarios y resolución de incidencias técnicas.</td>
                 </tr>
-            </table>
+            </tbody>
+        </table>
+    </div>
         </section>
 
         <section id="educacion">
-            <h2 class="subtitle">Educación</h2>
-            <p>Información sobre tus estudios académicos.</p>
-            <div class="map-container">
-                <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3163.089676426542!2d-122.084249!3d37.422065!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fb0c4d2df4a71%3A0xe5c5c05f7e685e8e!2sGoogleplex!5e0!3m2!1ses-419!2sus!4v1620394574963!5m2!1ses-419!2sus"
-                    width="100%" height="350" style="border:0;" allowfullscreen="" loading="lazy">
-                </iframe>
+            <h2 class="subtitle center">Educación</h2>
+            <div class="educacion-flex">
+                <!-- Colegio -->
+                <div class="educacion-info">
+                    <h3>Unidad Educativa Cardenal Bernardino Echeverría Ruiz</h3>
+                    <p>Informática</p>
+                    <p>2014 - 2020</p>
+                </div>
+                <div class="educacion-mapa">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.9613617013515!2d-79.93682179067976!3d-2.1683978372147776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d726cedc8f755%3A0x3dbac00c7da4cff5!2sUnidad%20Educativa%20Cardenal%20Bernardino%20Echeverr%C3%ADa%20Ruiz!5e0!3m2!1ses!2sec!4v1748758643432!5m2!1ses!2sec"
+                        width="320" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <a href="https://maps.app.goo.gl/jAk6xn7Dn6wZZ6VU9" target="_blank" style="display:block;text-align:center;margin-top:0.5rem;">Ver en Google Maps</a>
+                </div>
             </div>
-            <hr>
+            <div class="educacion-flex">
+                <!-- ESPOL -->
+                <div class="educacion-info">
+                    <h3>ESPOL - Escuela Superior Politécnica del Litoral</h3>
+                    <p>Ingeniería (tu carrera)</p>
+                    <p>2021 - Actualidad</p>
+                </div>
+                <div class="educacion-mapa">
+                    <iframe 
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.019900167492!2d-79.96772868523847!3d-2.147934937430682!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x902d13c1b2e5e5e5%3A0x7e7e7e7e7e7e7e7e!2sESPOL%20-%20Escuela%20Superior%20Politécnica%20del%20Litoral!5e0!3m2!1ses-419!2sec!4v1717281234567!5m2!1ses-419!2sec"
+                        width="320" height="220" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <a href="https://maps.app.goo.gl/6y6v6v6v6v6v6v6v6" target="_blank" style="display:block;text-align:center;margin-top:0.5rem;">Ver en Google Maps</a>
+                </div>
+            </div>
         </section>
 
         <section id="habilidades">
             <h2 class="subtitle" style="text-align: center;">Habilidades</h2>
-            <div class="slider-habilidades" style="justify-content: center;">
+            <div class="slider-habilidades center-flex">
                 <div class="slide">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg" alt="HTML" />
                     <span>HTML</span>
@@ -133,7 +165,6 @@
                 </div>
             </div>
         </section>
-
         <section id="referencias">
             <h2 class="subtitle" style="text-align:center;">Referencias</h2>
             <div class="referencias-grid">
@@ -169,57 +200,74 @@
             </div>
         </section>
         <section id="contacto">
-            <p>Información para que te contacten: correo, teléfono, redes.</p>
-            <p>Visita mi perfil profesional en <a href="https://www.linkedin.com/" target="_blank" rel="noopener">LinkedIn</a> para más información.</p>
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/qvn0MWP2KFY?si=FYyE3MpHa_Bty4si"
-                title="YouTube video player" frameborder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            <h2 class="subtitle center">Contacto</h2>
+            <div class="contacto-flex center-content">
+                <div class="redes-sociales izquierda">
+                    <a href="https://www.linkedin.com/" target="_blank" title="LinkedIn">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" />
+                    </a>
+                    <a href="https://github.com/" target="_blank" title="GitHub">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub" />
+                    </a>
+                </div>
+                <form class="form-contacto">
+                    <input type="text" name="nombre" placeholder="Tu nombre" required>
+                    <input type="email" name="email" placeholder="Tu correo electrónico" required>
+                    <input type="text" name="asunto" placeholder="Asunto" required>
+                    <textarea name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <button type="submit">Enviar</button>
+                </form>
+                <div class="redes-sociales derecha">
+                    <a href="https://twitter.com/" target="_blank" title="Twitter">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/twitter/twitter-original.svg" alt="Twitter" />
+                    </a>
+                    <a href="https://facebook.com/" target="_blank" title="Facebook">
+                        <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/facebook/facebook-original.svg" alt="Facebook" />
+                    </a>
+                </div>
+            </div>
         </section>
-        <section>
-        <form action="/enviar" method="post">
-            <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
-
-            <label for="pais">Selecciona tu país</label>
-            <select id="pais" name="pais" required>
-                <option value="">-- Selecciona tu país --</option>
-                <option value="mx">México</option>
-                <option value="ar">Argentina</option>
-                <option value="es">España</option>
-                <option value="co">Colombia</option>
-            </select>
-
-            <label for="contacto_form">¿Dónde podemos contactarte?</label>
-            <input type="email" id="contacto_form" name="contacto_form" placeholder="Tu correo electrónico" required>
-
-            <fieldset>
-                <legend>Habilidades</legend>
-                <label>
-                    <input type="checkbox" name="habilidades" value="html" required>
-                    HTML
-                </label>
-                <label>
-                    <input type="checkbox" name="habilidades" value="css" required>
-                    CSS
-                </label>
-                <label>
-                    <input type="checkbox" name="habilidades" value="javascript" required>
-                    JavaScript
-                </label>
-            </fieldset>
-
-            <label for="descripcion">Descripción personal</label>
-            <textarea id="descripcion" name="descripcion" rows="5" cols="40" placeholder="Cuéntanos algo sobre ti" required></textarea>
-
-            <button type="submit">Enviar</button>
-        </form>
+        <section id="proyectos">
+            <h2 class="subtitle center">Proyectos</h2>
+            <div class="proyectos-lista">
+                <div class="proyecto-card">
+                    <h3>Proyecto 1: <span class="proyecto-nombre">ED.P1.Grupo07</span></h3>
+                    <p><strong>Descripción:</strong> Poder adivinar el animal por medio de preguntas.</p>
+                    <p><strong>Tecnologías utilizadas:</strong> Java.</p>
+                    <p><strong>Estado:</strong> Completado</p>
+                    <p><strong>Sitio web:</strong> <a href="https://github.com/paul2723/ED.P1.Grupo07.git" target="_blank">Repositorio en GitHub</a></p>
+                    <div class="proyecto-captura">
+                        <!-- Aquí puedes poner una imagen de ejemplo -->
+                        <img src="https://encrypted-tbn1.gstatic.com/images?q=tbn:ANd9GcTZTsmjx_g0hGR06h2YSnCvW4SW2x-grDn6Mw8HTKiTcGF3vi-b" alt="Captura de ED.P1.Grupo07" />
+                    </div>
+                </div>
+                <div class="proyecto-card">
+                    <h3>Proyecto 2: <span class="proyecto-nombre">Estructura</span></h3>
+                    <p><strong>Descripción:</strong> El proyecto es una forma de crear iteradores que permitan recorrer los elementos uno a uno.</p>
+                    <p><strong>Tecnologías utilizadas:</strong> Java.</p>
+                    <p><strong>Estado:</strong> Completado</p>
+                    <p><strong>Sitio web:</strong> <a href="https://github.com/paul2723/Estructura.git" target="_blank">Repositorio en GitHub</a></p>
+                    <div class="proyecto-captura">
+                        <img src="https://encrypted-tbn2.gstatic.com/images?q=tbn:ANd9GcTjlY19zwv5xBmBZSg6cqbMVmw8QEWniSd5etnoxzT-4MeBoWmN" alt="Captura de Estructura" />
+                    </div>
+                </div>
+                <div class="proyecto-card">
+                    <h3>Proyecto 3: <span class="proyecto-nombre">tareadise</span></h3>
+                    <p><strong>Descripción:</strong> El proyecto es una forma de comprobar si el código con las variables están bien declaradas y se usan de una forma apropiada.</p>
+                    <p><strong>Tecnologías utilizadas:</strong> Java.</p>
+                    <p><strong>Estado:</strong> Completado</p>
+                    <p><strong>Sitio web:</strong> <a href="https://github.com/paul2723/tareadise.git" target="_blank">Repositorio en GitHub</a></p>
+                    <div class="proyecto-captura">
+                        <img src="https://ferestrepoca.github.io/paradigmas-de-programacion/poa/poa_teoria/Images/python.webp?raw=true" alt="Captura de tareadise" />
+                    </div>
+                </div>
+            </div>
         </section>
         
     </main>
 
     <footer>
-        <p>&copy; 2025 [Tu Nombre]. Todos los derechos reservados.</p>
+        <p>&copy; 2025 [Paul Alcivar Zavala]. Todos los derechos reservados.</p>
     </footer>
 </body>
 
